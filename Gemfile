@@ -47,5 +47,5 @@ end
 
 gem 'simple_form'
 gem 'haml'
-gem 'bootstrap'
+gem 'bootstrap-sass'
 gem 'kaminari'
