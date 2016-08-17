@@ -1,7 +1,7 @@
 class JobsController < ApplicationController
   before_action :find_job, only: [:show, :edit, :update, :destroy]
   def index
-    @jobs = Job.page(params[:page]).per(25)
+    @jobs = Job.all #page(params[:page]).per(25)
   end
 
   def show

@@ -48,4 +48,3 @@ end
 gem 'simple_form'
 gem 'haml'
 gem 'bootstrap-sass'
-gem 'kaminari'
