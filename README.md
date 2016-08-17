@@ -16,7 +16,7 @@ This app was created under the tutorial 12 web apps in 12 weeks by Mackenzie Chi
 #### Still to be done:
 * Add users and company users
 * Add admin user
-* Add payment methods to charge companies to posts
+* Add payment method to charge companies to posts
 * Add pagination
 
 
