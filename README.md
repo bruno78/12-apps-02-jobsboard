@@ -14,7 +14,7 @@ This app was created under the tutorial 12 web apps in 12 weeks by Mackenzie Chi
 * Users will be able to search by category
 
 #### Still to be done:
-* Add users and company users
+* Add users and company users. done!
 * Add admin user
 * Add payment method to charge companies to posts
 * Add pagination

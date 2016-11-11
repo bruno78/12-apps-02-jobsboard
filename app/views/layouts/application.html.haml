@@ -3,7 +3,6 @@
 %head
   %title Jobsboard
   = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
   = csrf_meta_tags
 
 %body
@@ -14,10 +13,10 @@
 
         %li= link_to 'All Jobs', root_path, class: "nav-item dropdown-toggle"
         %li.nav-item.dropdown
-          %a.nav-link.dropdown-toggle(href="#" id="supportedContentDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Categories
-          .dropdown-menu(aria-labelledby = "supportedContentDropdown")
+          %a.nav-link.dropdown-toggle(href="localhost:3000/" id="supportedContentDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Categories
+          %ul.dropdown-menu(aria-labelledby = "supportedContentDropdown")
             - Category.all.each do |category|
-              = link_to category.name, jobs_path(category: category.name), class: "dropdown-item"
+              %li= link_to category.name, jobs_path(category: category.name), class: "dropdown-item"
               %br
       -if user_signed_in?
         = link_to "Account", edit_user_registration_path, class: "navbar-text navbar-right navbar-link"
@@ -32,3 +31,5 @@
       %p.notice= notice
       %p.alert= alert
       = yield
+
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
